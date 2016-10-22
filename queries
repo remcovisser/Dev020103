@@ -162,6 +162,27 @@ match (f5:flights{code:005}), (a6:airports{name:"London airport", size: 600})
 
 
 // Company is based[rent, since] at a airport
+match (c1:companies{name:"Lufthansa", asset:"asset1"}),
+  (a1:airports{name:"Schiphol", size: 100}),
+  (a2:airports{name:"Schiphol", size: 200})
+  create
+    (c1)-[b1:BASED{rent:400, since:"01-02-2015"}]->(a1),
+    (c1)-[b2:BASED{rent:800, since:"02-04-2009"}]->(a2)
+
+match (c3:companies{name:"KLM", asset:"asset3"}),
+  (a3:airports{name:"Venezia Marco Polo", size: 300}),
+  (a4:airports{name:"Venezia Marco Polo", size: 400})
+  create
+    (c3)-[b3:BASED{rent:200, since:"05-06-2008"}]->(a3),
+    (c3)-[b4:BASED{rent:700, since:"24-08-2001"}]->(a4)
+
+match (c2:companies{name:"Lufthansa", asset:"asset2"}),
+  (a1:airports{name:"Schiphol", size: 100}),
+  (a4:airports{name:"Venezia Marco Polo", size: 400})
+  create
+    (c2)-[b5:BASED{rent:2200, since:"03-03-2003"}]->(a1),
+    (c2)-[b6:BASED{rent:1700, since:"18-09-2000"}]->(a4)
+
 
 
  -------- Question queries  --------
