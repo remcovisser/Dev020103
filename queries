@@ -9,8 +9,8 @@ CREATE(a1:airports {name:"Schiphol", city:"Amsterdam", capacity: "Small", size:1
 CREATE(a2:airports {name:"Schiphol", city:"Amsterdam", capacity: "Small", size:200})
 CREATE(a3:airports {name:"Venezia Marco Polo", city:"Venezia", capacity: "Medium", size:300})
 CREATE(a4:airports {name:"Venezia Marco Polo", city:"Venezia", capacity: "Medium", size:400})
-CREATE(a5:airports {name:"London airport1", city:"London", capacity: "Large", size:500})
-CREATE(a6:airports {name:"London airport2", city:"London", capacity: "Large", size:600})
+CREATE(a5:airports {name:"London airport", city:"London", capacity: "Large", size:500})
+CREATE(a6:airports {name:"London airport", city:"London", capacity: "Large", size:600})
 
 // Terminals
 CREATE(t1:terminals {code: "A", open: true})
@@ -19,9 +19,20 @@ CREATE(t3:terminals {code: "C", open: true})
 CREATE(t4:terminals {code: "D", open: false})
 CREATE(t5:terminals {code: "E", open: false})
 
-// Companies
-
 // Flights
+CREATE(f1:flights {code:001, plane:"plane1"})
+CREATE(f2:flights {code:002, plane:"plane2"})
+CREATE(f3:flights {code:003, plane:"plane3"})
+CREATE(f4:flights {code:004, plane:"plane4"})
+CREATE(f5:flights {code:005, plane:"plane5"})
+
+// Companies
+CREATE(c1:companies {name:"Lufthansa", plane_number:001, asset:"asset1"})
+CREATE(c2:companies {name:"Lufthansa", plane_number:002, asset:"asset2"})
+CREATE(c3:companies {name:"KLM", plane_number:003, asset:"asset3"})
+CREATE(c4:companies {name:"KLM", plane_number:004, asset:"asset4"})
+CREATE(c5:companies {name:"Hertog", plane_number:005, asset:"asset5"})
+
 
 // Gates
 
@@ -30,17 +41,127 @@ CREATE(t5:terminals {code: "E", open: false})
 
 // Airport includes terminals
 match (a1:airports{name:"Schiphol", size: 100}),
-(t1:terminals{code:"A"}),
-(t2:terminals{code:"B"}),
-(t3:terminals{code:"C"}),
-(t4:terminals{code:"D"}),
-(t5:terminals{code:"E"})
-create
-  (a1)-[i1:INCLUDES]->(t1),
-  (a1)-[i2:INCLUDES]->(t2),
-  (a1)-[i3:INCLUDES]->(t3),
-  (a1)-[i4:INCLUDES]->(t4),
-  (a1)-[i5:INCLUDES]->(t5)
+  (t1:terminals{code:"A"}),
+  (t2:terminals{code:"B"}),
+  (t3:terminals{code:"C"}),
+  (t4:terminals{code:"D"}),
+  (t5:terminals{code:"E"})
+  create
+    (a1)-[i1:INCLUDES]->(t1),
+    (a1)-[i2:INCLUDES]->(t2),
+    (a1)-[i3:INCLUDES]->(t3),
+    (a1)-[i4:INCLUDES]->(t4),
+    (a1)-[i5:INCLUDES]->(t5)
+
+match (a2:airports{name:"Schiphol", size: 200}),
+  (t1:terminals{code:"A"}),
+  (t5:terminals{code:"E"})
+  create
+    (a2)-[i1:INCLUDES]->(t1),
+    (a2)-[i2:INCLUDES]->(t1),
+    (a2)-[i3:INCLUDES]->(t1),
+    (a2)-[i4:INCLUDES]->(t5),
+    (a2)-[i5:INCLUDES]->(t5)
+
+match (a3:airports{name:"Venezia Marco Polo", size: 300}),
+  (t2:terminals{code:"B"}),
+  (t3:terminals{code:"C"}),
+  (t4:terminals{code:"D"})
+  create
+    (a3)-[i1:INCLUDES]->(t2),
+    (a3)-[i2:INCLUDES]->(t3),
+    (a3)-[i3:INCLUDES]->(t4),
+    (a3)-[i4:INCLUDES]->(t4),
+    (a3)-[i5:INCLUDES]->(t4)
+
+match (a4:airports{name:"Venezia Marco Polo", size: 400}),
+  (t1:terminals{code:"A"}),
+  (t2:terminals{code:"B"}),
+  (t3:terminals{code:"C"}),
+  (t4:terminals{code:"D"})
+  create
+    (a4)-[i1:INCLUDES]->(t1),
+    (a4)-[i2:INCLUDES]->(t1),
+    (a4)-[i3:INCLUDES]->(t2),
+    (a4)-[i4:INCLUDES]->(t3),
+    (a4)-[i5:INCLUDES]->(t4)
+
+match (a5:airports{name:"London airport", size: 500}),
+  (t1:terminals{code:"A"}),
+  (t2:terminals{code:"B"}),
+  (t3:terminals{code:"C"}),
+  (t4:terminals{code:"D"})
+  create
+    (a5)-[i1:INCLUDES]->(t1),
+    (a5)-[i2:INCLUDES]->(t2),
+    (a5)-[i3:INCLUDES]->(t2),
+    (a5)-[i4:INCLUDES]->(t3),
+    (a5)-[i5:INCLUDES]->(t4)
+
+match (a5:airports{name:"London airport", size: 600}),
+  (t1:terminals{code:"A"}),
+  (t2:terminals{code:"B"}),
+  (t3:terminals{code:"C"}),
+  (t5:terminals{code:"E"})
+  create
+    (a5)-[i1:INCLUDES]->(t1),
+    (a5)-[i2:INCLUDES]->(t2),
+    (a5)-[i3:INCLUDES]->(t3),
+    (a5)-[i4:INCLUDES]->(t5),
+    (a5)-[i5:INCLUDES]->(t5)
+
+
+// Company sells[price] flights
+match (c1:companies{name:"Lufthansa", asset:"asset1"}),
+  (f1:flights{code:001}),
+  (f2:flights{code:002})
+  create
+    (c1)-[s1:SELLS{price:400}]->(f1),
+    (c1)-[s2:SELLS{price:800}]->(f2)
+
+match (c3:companies{name:"KLM", asset:"asset4"}),
+  (f3:flights{code:003}),
+  (f4:flights{code:004})
+  create
+    (c3)-[s3:SELLS{price:400}]->(f3),
+    (c3)-[s4:SELLS{price:800}]->(f4)
+
+match (c5:companies{name:"Hertog", asset:"asset5"}),
+  (f5:flights{code:005})
+  create
+    (c5)-[s5:SELLS{price:800}]->(f5)
+
+
+// Terminal belongs to gates
+
+
+// Flights travels[from, distance, time] to airport
+match (f1:flights{code:001}), (f2:flights{code:002}), (a1:airports{name:"Schiphol", size: 100})
+  create
+    (f1)-[t1:TRAVELS{from:a1.name, distance:1500, time:1500}]->(a1),
+    (f2)-[t2:TRAVELS{from:a1.name, distance:900, time:2300}]->(a1)
+
+match (f2:flights{code:002}), (f3:flights{code:003}), (a2:airports{name:"Schiphol", size: 200})
+  create
+    (f2)-[t3:TRAVELS{from:a2.name, distance:2200, time:0700}]->(a2),
+    (f3)-[t4:TRAVELS{from:a2.name, distance:4500, time:0100}]->(a2)
+
+match (f4:flights{code:004}), (a3:airports{name:"Venezia Marco Polo", size: 300})
+  create
+    (f4)-[t5:TRAVELS{from:a3.name, distance:200, time:2200}]->(a3)
+
+match (f2:flights{code:002}), (f3:flights{code:003}), (f4:flights{code:004}), (a5:airports{name:"London airport", size: 500})
+  create
+    (f2)-[t6:TRAVELS{from:a5.name, distance:1200, time:2030}]->(a5),
+    (f3)-[t7:TRAVELS{from:a5.name, distance:2600, time:2100}]->(a5),
+    (f4)-[t8:TRAVELS{from:a5.name, distance:5000, time:2215}]->(a5)
+
+match (f5:flights{code:005}), (a6:airports{name:"London airport", size: 600})
+  create
+    (f5)-[t9:TRAVELS{from:a6.name, distance:650, time:1200}]->(a6)
+
+
+// Company is based[rent, since] at a airport
 
 
  -------- Question queries  --------
@@ -52,3 +173,11 @@ create
 // Find the name of the airport with the highest capacity. Output the name and the capacity.
 
 // Find all the opened terminals in ’Schiphol’. Output the code.
+
+// Find all the terminals of the airports in ’London’. Output the code.
+
+// Find all the gates that are boarding in ’Venezia Marco Polo’ for terminal ’B’. Print the number and the state.
+
+// Find all the flights landing in ’Rome’ for ’Lufthansa’ and ’KLM’. Print the code and the plane.
+
+// For each company find the amount of flights going to ’Rome’ leaving before 15:00. Print the company name and the total of flights.
