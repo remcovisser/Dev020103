@@ -1,0 +1,54 @@
+ -------- Delete all labels  --------
+ MATCH (n) DETACH DELETE n
+
+
+ -------- Creating labels  --------
+
+// Airports
+CREATE(a1:airports {name:"Schiphol", city:"Amsterdam", capacity: "Small", size:100})
+CREATE(a2:airports {name:"Schiphol", city:"Amsterdam", capacity: "Small", size:200})
+CREATE(a3:airports {name:"Venezia Marco Polo", city:"Venezia", capacity: "Medium", size:300})
+CREATE(a4:airports {name:"Venezia Marco Polo", city:"Venezia", capacity: "Medium", size:400})
+CREATE(a5:airports {name:"London airport1", city:"London", capacity: "Large", size:500})
+CREATE(a6:airports {name:"London airport2", city:"London", capacity: "Large", size:600})
+
+// Terminals
+CREATE(t1:terminals {code: "A", open: true})
+CREATE(t2:terminals {code: "B", open: true})
+CREATE(t3:terminals {code: "C", open: true})
+CREATE(t4:terminals {code: "D", open: false})
+CREATE(t5:terminals {code: "E", open: false})
+
+// Companies
+
+// Flights
+
+// Gates
+
+
+ -------- Creating relations  --------
+
+// Airport includes terminals
+match (a1:airports{name:"Schiphol", size: 100}),
+(t1:terminals{code:"A"}),
+(t2:terminals{code:"B"}),
+(t3:terminals{code:"C"}),
+(t4:terminals{code:"D"}),
+(t5:terminals{code:"E"})
+create
+  (a1)-[i1:INCLUDES]->(t1),
+  (a1)-[i2:INCLUDES]->(t2),
+  (a1)-[i3:INCLUDES]->(t3),
+  (a1)-[i4:INCLUDES]->(t4),
+  (a1)-[i5:INCLUDES]->(t5)
+
+
+ -------- Question queries  --------
+
+// Find the name and the capacity of all ’Large’ airports.
+
+// Find the total capacity of the airports in the same city. Output the name of the city and the total capacity.
+
+// Find the name of the airport with the highest capacity. Output the name and the capacity.
+
+// Find all the opened terminals in ’Schiphol’. Output the code.
