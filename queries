@@ -13,11 +13,36 @@ CREATE(a5:airports {name:"London airport", city:"London", capacity: "Large", siz
 CREATE(a6:airports {name:"London airport", city:"London", capacity: "Large", size:600})
 
 // Terminals
-CREATE(t1:terminals {code: "A", open: true})
-CREATE(t2:terminals {code: "B", open: true})
-CREATE(t3:terminals {code: "C", open: true})
-CREATE(t4:terminals {code: "D", open: false})
-CREATE(t5:terminals {code: "E", open: false})
+CREATE(t1:terminals {code: "A1", open: true})
+CREATE(t2:terminals {code: "B1", open: true})
+CREATE(t3:terminals {code: "C1", open: true})
+CREATE(t4:terminals {code: "D1", open: false})
+CREATE(t5:terminals {code: "E1", open: false})
+CREATE(t6:terminals {code: "A2", open: true})
+CREATE(t7:terminals {code: "B2", open: true})
+CREATE(t8:terminals {code: "C2", open: true})
+CREATE(t9:terminals {code: "D2", open: false})
+CREATE(t10:terminals {code: "E2", open: false})
+CREATE(t11:terminals {code: "A3", open: true})
+CREATE(t12:terminals {code: "B3", open: true})
+CREATE(t13:terminals {code: "C3", open: true})
+CREATE(t14:terminals {code: "D3", open: false})
+CREATE(t15:terminals {code: "E3", open: false})
+CREATE(t16:terminals {code: "A4", open: true})
+CREATE(t17:terminals {code: "B4", open: true})
+CREATE(t18:terminals {code: "C4", open: true})
+CREATE(t19:terminals {code: "D4", open: false})
+CREATE(t20:terminals {code: "E4", open: false})
+CREATE(t21:terminals {code: "A5", open: true})
+CREATE(t22:terminals {code: "B5", open: true})
+CREATE(t23:terminals {code: "C5", open: true})
+CREATE(t24:terminals {code: "D5", open: false})
+CREATE(t25:terminals {code: "E5", open: false})
+CREATE(t26:terminals {code: "A6", open: true})
+CREATE(t27:terminals {code: "B6", open: true})
+CREATE(t28:terminals {code: "C6", open: true})
+CREATE(t29:terminals {code: "D6", open: false})
+CREATE(t30:terminals {code: "E6", open: false})
 
 // Flights
 CREATE(f1:flights {code:001, plane:"plane1"})
@@ -131,11 +156,11 @@ CREATE(g90:gates {number:90, state:"Closed"})
 
 // Airport includes terminals
 match (a1:airports{name:"Schiphol", size: 100}),
-  (t1:terminals{code:"A"}),
-  (t2:terminals{code:"B"}),
-  (t3:terminals{code:"C"}),
-  (t4:terminals{code:"D"}),
-  (t5:terminals{code:"E"})
+  (t1:terminals{code:"A1"}),
+  (t2:terminals{code:"B2"}),
+  (t3:terminals{code:"C2"}),
+  (t4:terminals{code:"D3"}),
+  (t5:terminals{code:"E4"})
   create
     (a1)-[i1:INCLUDES]->(t1),
     (a1)-[i2:INCLUDES]->(t2),
@@ -144,69 +169,69 @@ match (a1:airports{name:"Schiphol", size: 100}),
     (a1)-[i5:INCLUDES]->(t5)
 
 match (a2:airports{name:"Schiphol", size: 200}),
-  (t1:terminals{code:"A"}),
-  (t2:terminals{code:"B"}),
-  (t3:terminals{code:"C"}),
-  (t4:terminals{code:"D"}),
-  (t5:terminals{code:"E"})
+  (t6:terminals{code:"A2"}),
+  (t7:terminals{code:"B2"}),
+  (t8:terminals{code:"C2"}),
+  (t9:terminals{code:"D2"}),
+  (t10:terminals{code:"E2"})
   create
-    (a2)-[i6:INCLUDES]->(t1),
-    (a2)-[i7:INCLUDES]->(t2),
-    (a2)-[i8:INCLUDES]->(t3),
-    (a2)-[i9:INCLUDES]->(t4),
-    (a2)-[i10:INCLUDES]->(t5)
+    (a2)-[i6:INCLUDES]->(t6),
+    (a2)-[i7:INCLUDES]->(t7),
+    (a2)-[i8:INCLUDES]->(t8),
+    (a2)-[i9:INCLUDES]->(t9),
+    (a2)-[i10:INCLUDES]->(t10)
 
 match (a3:airports{name:"Venezia Marco Polo", size: 300}),
-  (t1:terminals{code:"A"}),
-  (t2:terminals{code:"B"}),
-  (t3:terminals{code:"C"}),
-  (t4:terminals{code:"D"}),
-  (t5:terminals{code:"E"})
+  (t11:terminals{code:"A3"}),
+  (t12:terminals{code:"B3"}),
+  (t13:terminals{code:"C3"}),
+  (t14:terminals{code:"D3"}),
+  (t15:terminals{code:"E3"})
   create
-    (a3)-[i11:INCLUDES]->(t1),
-    (a3)-[i12:INCLUDES]->(t2),
-    (a3)-[i13:INCLUDES]->(t3),
-    (a3)-[i14:INCLUDES]->(t4),
-    (a3)-[i15:INCLUDES]->(t5)
+    (a3)-[i11:INCLUDES]->(t11),
+    (a3)-[i12:INCLUDES]->(t12),
+    (a3)-[i13:INCLUDES]->(t13),
+    (a3)-[i14:INCLUDES]->(t14),
+    (a3)-[i15:INCLUDES]->(t15)
 
 match (a4:airports{name:"Venezia Marco Polo", size: 400}),
-  (t1:terminals{code:"A"}),
-  (t2:terminals{code:"B"}),
-  (t3:terminals{code:"C"}),
-  (t4:terminals{code:"D"}),
-  (t5:terminals{code:"E"})
+  (t16:terminals{code:"A4"}),
+  (t17:terminals{code:"B4"}),
+  (t18:terminals{code:"C4"}),
+  (t19:terminals{code:"D4"}),
+  (t20:terminals{code:"E4"})
   create
-    (a4)-[i16:INCLUDES]->(t1),
-    (a4)-[i17:INCLUDES]->(t2),
-    (a4)-[i18:INCLUDES]->(t3),
-    (a4)-[i19:INCLUDES]->(t4),
-    (a4)-[i20:INCLUDES]->(t5)
+    (a4)-[i16:INCLUDES]->(t16),
+    (a4)-[i17:INCLUDES]->(t17),
+    (a4)-[i18:INCLUDES]->(t18),
+    (a4)-[i19:INCLUDES]->(t19),
+    (a4)-[i20:INCLUDES]->(t20)
 
 match (a5:airports{name:"London airport", size: 500}),
-  (t1:terminals{code:"A"}),
-  (t2:terminals{code:"B"}),
-  (t3:terminals{code:"C"}),
-  (t4:terminals{code:"D"}),
-  (t5:terminals{code:"E"})
+  (t21:terminals{code:"A5"}),
+  (t22:terminals{code:"B5"}),
+  (t23:terminals{code:"C5"}),
+  (t24:terminals{code:"D5"}),
+  (t25:terminals{code:"E5"})
   create
-    (a5)-[i21:INCLUDES]->(t1),
-    (a5)-[i22:INCLUDES]->(t2),
-    (a5)-[i23:INCLUDES]->(t3),
-    (a5)-[i24:INCLUDES]->(t4),
-    (a5)-[i25:INCLUDES]->(t5)
+    (a5)-[i21:INCLUDES]->(t21),
+    (a5)-[i22:INCLUDES]->(t22),
+    (a5)-[i23:INCLUDES]->(t23),
+    (a5)-[i24:INCLUDES]->(t24),
+    (a5)-[i25:INCLUDES]->(t25)
 
-match (a5:airports{name:"London airport", size: 600}),
-  (t1:terminals{code:"A"}),
-  (t2:terminals{code:"B"}),
-  (t3:terminals{code:"C"}),
-  (t4:terminals{code:"D"}),
-  (t5:terminals{code:"E"})
+match (a6:airports{name:"London airport", size: 600}),
+  (t26:terminals{code:"A6"}),
+  (t27:terminals{code:"B6"}),
+  (t28:terminals{code:"C6"}),
+  (t29:terminals{code:"D6"}),
+  (t30:terminals{code:"E6"})
   create
-    (a6)-[i26:INCLUDES]->(t1),
-    (a6)-[i27:INCLUDES]->(t2),
-    (a6)-[i28:INCLUDES]->(t3),
-    (a6)-[i29:INCLUDES]->(t4),
-    (a6)-[i30:INCLUDES]->(t5)
+    (a6)-[i26:INCLUDES]->(t26),
+    (a6)-[i27:INCLUDES]->(t27),
+    (a6)-[i28:INCLUDES]->(t28),
+    (a6)-[i29:INCLUDES]->(t29),
+    (a6)-[i30:INCLUDES]->(t30)
 
 
 // Company sells[price] flights
@@ -231,6 +256,185 @@ match (c5:companies{name:"Hertog", asset:"asset5"}),
 
 
 // Terminal belongs to gates
+match (t1:terminals{code:"A1"}), (g1:gates{number:1}), (g2:gates{number:2}), (g3:gates{number:3})
+  create
+    (t1)-[b1:BELONGS]->(g1),
+    (t1)-[b2:BELONGS]->(g2),
+    (t1)-[b3:BELONGS]->(g3)
+
+match (t2:terminals{code:"B1"}), (g4:gates{number:4}), (g5:gates{number:5}), (g6:gates{number:6})
+  create
+    (t2)-[b4:BELONGS]->(g4),
+    (t2)-[b5:BELONGS]->(g5),
+    (t2)-[b6:BELONGS]->(g6)
+
+match (t3:terminals{code:"C1"}), (g7:gates{number:7}), (g8:gates{number:8}), (g9:gates{number:9})
+  create
+    (t3)-[b7:BELONGS]->(g7),
+    (t3)-[b8:BELONGS]->(g8),
+    (t3)-[b9:BELONGS]->(g9)
+
+match (t4:terminals{code:"D1"}), (g10:gates{number:10}), (g11:gates{number:11}), (g12:gates{number:12})
+  create
+    (t4)-[b10:BELONGS]->(g10),
+    (t4)-[b11:BELONGS]->(g11),
+    (t4)-[b12:BELONGS]->(g12)
+
+match (t5:terminals{code:"E1"}), (g13:gates{number:13}), (g14:gates{number:14}), (g15:gates{number:15})
+  create
+    (t5)-[b13:BELONGS]->(g13),
+    (t5)-[b14:BELONGS]->(g14),
+    (t5)-[b15:BELONGS]->(g15)
+
+match (t6:terminals{code:"A2"}), (g16:gates{number:16}), (g17:gates{number:17}), (g18:gates{number:18})
+  create
+    (t6)-[b16:BELONGS]->(g16),
+    (t6)-[b17:BELONGS]->(g17),
+    (t6)-[b18:BELONGS]->(g18)
+
+  match (t7:terminals{code:"B2"}), (g19:gates{number:19}), (g20:gates{number:20}), (g21:gates{number:21})
+    create
+      (t7)-[b19:BELONGS]->(g19),
+      (t7)-[b20:BELONGS]->(g20),
+      (t7)-[b21:BELONGS]->(g21)
+
+match (t8:terminals{code:"C2"}), (g22:gates{number:22}), (g23:gates{number:23}), (g24:gates{number:24})
+  create
+    (t8)-[b22:BELONGS]->(g22),
+    (t8)-[b23:BELONGS]->(g23),
+    (t8)-[b24:BELONGS]->(g24)
+
+match (t9:terminals{code:"D2"}), (g25:gates{number:25}), (g26:gates{number:26}), (g27:gates{number:27})
+  create
+    (t9)-[b25:BELONGS]->(g25),
+    (t9)-[b26:BELONGS]->(g26),
+    (t9)-[b27:BELONGS]->(g27)
+
+match (t10:terminals{code:"E2"}), (g28:gates{number:28}), (g29:gates{number:29}), (g30:gates{number:30})
+  create
+    (t10)-[b28:BELONGS]->(g28),
+    (t10)-[b29:BELONGS]->(g29),
+    (t10)-[b30:BELONGS]->(g30)
+
+match (t11:terminals{code:"A3"}), (g31:gates{number:31}), (g32:gates{number:32}), (g33:gates{number:33})
+  create
+    (t11)-[b31:BELONGS]->(g31),
+    (t11)-[b32:BELONGS]->(g32),
+    (t11)-[b33:BELONGS]->(g33)
+
+match (t12:terminals{code:"B3"}), (g34:gates{number:34}), (g35:gates{number:35}), (g36:gates{number:36})
+  create
+    (t12)-[b34:BELONGS]->(g34),
+    (t12)-[b35:BELONGS]->(g35),
+    (t12)-[b36:BELONGS]->(g36)
+
+match (t13:terminals{code:"C3"}), (g37:gates{number:37}), (g38:gates{number:38}), (g39:gates{number:39})
+  create
+    (t13)-[b37:BELONGS]->(g37),
+    (t13)-[b38:BELONGS]->(g38),
+    (t13)-[b39:BELONGS]->(g39)
+
+match (t14:terminals{code:"D3"}), (g40:gates{number:40}), (g41:gates{number:41}), (g42:gates{number:42})
+  create
+    (t14)-[b40:BELONGS]->(g40),
+    (t14)-[b41:BELONGS]->(g41),
+    (t14)-[b42:BELONGS]->(g42)
+
+match (t15:terminals{code:"E3"}), (g43:gates{number:43}), (g44:gates{number:44}), (g45:gates{number:45})
+  create
+    (t15)-[b43:BELONGS]->(g43),
+    (t15)-[b44:BELONGS]->(g44),
+    (t15)-[b45:BELONGS]->(g45)
+
+match (t16:terminals{code:"A4"}), (g46:gates{number:46}), (g47:gates{number:47}), (g48:gates{number:48})
+  create
+    (t16)-[b46:BELONGS]->(g46),
+    (t16)-[b47:BELONGS]->(g47),
+    (t16)-[b48:BELONGS]->(g48)
+
+match (t17:terminals{code:"B4"}), (g49:gates{number:49}), (g50:gates{number:50}), (g51:gates{number:51})
+  create
+    (t17)-[b49:BELONGS]->(g49),
+    (t17)-[b50:BELONGS]->(g50),
+    (t17)-[b51:BELONGS]->(g51)
+
+match (t18:terminals{code:"C4"}), (g52:gates{number:52}), (g53:gates{number:53}), (g54:gates{number:54})
+  create
+    (t18)-[b52:BELONGS]->(g52),
+    (t18)-[b53:BELONGS]->(g53),
+    (t18)-[b54:BELONGS]->(g54)
+
+match (t19:terminals{code:"D4"}), (g55:gates{number:55}), (g56:gates{number:56}), (g57:gates{number:57})
+  create
+    (t19)-[b55:BELONGS]->(g55),
+    (t19)-[b56:BELONGS]->(g56),
+    (t19)-[b57:BELONGS]->(g57)
+
+match (t20:terminals{code:"E4"}), (g58:gates{number:58}), (g59:gates{number:59}), (g60:gates{number:60})
+  create
+    (t20)-[b58:BELONGS]->(g58),
+    (t20)-[b59:BELONGS]->(g59),
+    (t20)-[b60:BELONGS]->(g60)
+
+match (t21:terminals{code:"A5"}), (g61:gates{number:61}), (g62:gates{number:62}), (g63:gates{number:63})
+  create
+    (t21)-[b61:BELONGS]->(g61),
+    (t21)-[b62:BELONGS]->(g62),
+    (t21)-[b63:BELONGS]->(g63)
+
+match (t22:terminals{code:"B5"}), (g64:gates{number:64}), (g65:gates{number:65}), (g66:gates{number:66})
+  create
+    (t22)-[b64:BELONGS]->(g64),
+    (t22)-[b65:BELONGS]->(g65),
+    (t22)-[b66:BELONGS]->(g66)
+
+match (t23:terminals{code:"C5"}), (g67:gates{number:67}), (g68:gates{number:68}), (g69:gates{number:69})
+  create
+    (t23)-[b67:BELONGS]->(g67),
+    (t23)-[b68:BELONGS]->(g68),
+    (t23)-[b69:BELONGS]->(g69)
+
+match (t24:terminals{code:"D5"}), (g70:gates{number:70}), (g71:gates{number:71}), (g72:gates{number:72})
+  create
+    (t24)-[b70:BELONGS]->(g70),
+    (t24)-[b71:BELONGS]->(g71),
+    (t24)-[b72:BELONGS]->(g72)
+
+match (t25:terminals{code:"E5"}), (g73:gates{number:73}), (g74:gates{number:74}), (g75:gates{number:75})
+  create
+    (t25)-[b73:BELONGS]->(g74),
+    (t25)-[b74:BELONGS]->(g75),
+    (t25)-[b75:BELONGS]->(g75)
+
+match (t26:terminals{code:"A6"}), (g76:gates{number:76}), (g77:gates{number:77}), (g78:gates{number:78})
+  create
+    (t26)-[b76:BELONGS]->(g76),
+    (t26)-[b77:BELONGS]->(g77),
+    (t26)-[b78:BELONGS]->(g78)
+
+match (t27:terminals{code:"B6"}), (g79:gates{number:79}), (g80:gates{number:80}), (g81:gates{number:81})
+  create
+    (t27)-[b79:BELONGS]->(g79),
+    (t27)-[b80:BELONGS]->(g80),
+    (t27)-[b81:BELONGS]->(g81)
+
+match (t28:terminals{code:"C6"}), (g82:gates{number:82}), (g83:gates{number:83}), (g84:gates{number:84})
+  create
+    (t28)-[b82:BELONGS]->(g82),
+    (t28)-[b83:BELONGS]->(g83),
+    (t28)-[b84:BELONGS]->(g84)
+
+match (t29:terminals{code:"D6"}), (g85:gates{number:85}), (g86:gates{number:86}), (g87:gates{number:87})
+  create
+    (t29)-[b85:BELONGS]->(g85),
+    (t29)-[b86:BELONGS]->(g86),
+    (t29)-[b87:BELONGS]->(g87)
+
+match (t30:terminals{code:"E6"}), (g88:gates{number:88}), (g89:gates{number:89}), (g90:gates{number:90})
+  create
+    (t30)-[b88:BELONGS]->(g88),
+    (t30)-[b89:BELONGS]->(g89),
+    (t30)-[b90:BELONGS]->(g90)
 
 
 // Flights travels[from, distance, time] to airport
