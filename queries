@@ -1,5 +1,37 @@
- -------- Delete all labels  --------
- MATCH (n) DETACH DELETE n
+
+-------- Question queries  --------
+
+// Find the name and the capacity of all ’Large’ airports.
+match (a:airports {capacity:"Large"}) return a.name, a.capacity
+
+// Find the total capacity of the airports in the same city. Output the name of the city and the total capacity.
+match(a:airports) return a.city, sum(a.size) as totalCapacity
+
+// Find the name of the airport with the highest capacity. Output the name and the capacity.
+match(a:airports) return a.city, sum(a.size) as totalCapacity order by totalCapacity DESC limit 1
+
+// Find all the opened terminals in ’Schiphol’. Output the code.
+match(a:airports {name:"Schiphol"})-[i:INCLUDES]-(t:terminals{open:true}) return t.code
+
+// Find all the terminals of the airports in ’London’. Output the code.
+match(a:airports {city:"London"})-[i:INCLUDES]-(t:terminals) return t.code
+
+// Find all the gates that are boarding in ’Venezia Marco Polo’ for terminal ’B’. Print the number and the state.
+match (a:airports {name:"Venezia Marco Polo"})-[i:INCLUDES]-(t:terminals{code:"B3"})-[b:BELONGS]-(g:gates{state:"Boarding"}) return g.number, g.state
+
+// Find all the flights landing in ’Rome’ for ’Lufthansa’ and ’KLM’. Print the code and the plane.
+match(a:airports {city:"Rome"})-[t:TRAVELS]-(f:flights)-[s:SELLS]-(c:companies)
+where c.name = "KLM" or c.name = "Lufthansa"
+return f, t, c
+
+// For each company find the amount of flights going to ’Rome’ leaving before 15:00. Print the company name and the total of flights.
+match(a:airports {city:"Rome"})-[t:TRAVELS]-(f:flights)-[s:SELLS]-(c:companies)
+where t.time < 15000
+return c.name, count(t) as totalFlights
+
+
+-------- Delete all labels  --------
+MATCH (n) DETACH DELETE n
 
 
  -------- Creating labels  --------
@@ -8,7 +40,7 @@
 CREATE(a1:airports {name:"Schiphol", city:"Amsterdam", capacity: "Small", size:100})
 CREATE(a2:airports {name:"Schiphol", city:"Amsterdam", capacity: "Small", size:200})
 CREATE(a3:airports {name:"Venezia Marco Polo", city:"Venezia", capacity: "Medium", size:300})
-CREATE(a4:airports {name:"Venezia Marco Polo", city:"Venezia", capacity: "Medium", size:400})
+CREATE(a4:airports {name:"Rome airport", city:"Rome", capacity: "Medium", size:400})
 CREATE(a5:airports {name:"London airport", city:"London", capacity: "Large", size:500})
 CREATE(a6:airports {name:"London airport", city:"London", capacity: "Large", size:600})
 
@@ -194,7 +226,7 @@ match (a3:airports{name:"Venezia Marco Polo", size: 300}),
     (a3)-[i14:INCLUDES]->(t14),
     (a3)-[i15:INCLUDES]->(t15)
 
-match (a4:airports{name:"Venezia Marco Polo", size: 400}),
+match (a4:airports{name:"Rome airport", size: 400}),
   (t16:terminals{code:"A4"}),
   (t17:terminals{code:"B4"}),
   (t18:terminals{code:"C4"}),
@@ -452,6 +484,12 @@ match (f4:flights{code:004}), (a3:airports{name:"Venezia Marco Polo", size: 300}
   create
     (f4)-[t5:TRAVELS{from:a3.name, distance:200, time:2200}]->(a3)
 
+match (f2:flights{code:002}), (f3:flights{code:003}), (f4:flights{code:004}), (a4:airports{name:"Rome airport", size: 400})
+  create
+    (f2)-[t6:TRAVELS{from:a4.name, distance:1200, time:2030}]->(a4),
+    (f3)-[t7:TRAVELS{from:a4.name, distance:2600, time:2100}]->(a4),
+    (f4)-[t8:TRAVELS{from:a4.name, distance:5000, time:2215}]->(a4)
+
 match (f2:flights{code:002}), (f3:flights{code:003}), (f4:flights{code:004}), (a5:airports{name:"London airport", size: 500})
   create
     (f2)-[t6:TRAVELS{from:a5.name, distance:1200, time:2030}]->(a5),
@@ -473,35 +511,14 @@ match (c1:companies{name:"Lufthansa", asset:"asset1"}),
 
 match (c3:companies{name:"KLM", asset:"asset3"}),
   (a3:airports{name:"Venezia Marco Polo", size: 300}),
-  (a4:airports{name:"Venezia Marco Polo", size: 400})
+  (a4:airports{name:"Rome airport", size: 400})
   create
     (c3)-[b3:BASED{rent:200, since:"05-06-2008"}]->(a3),
     (c3)-[b4:BASED{rent:700, since:"24-08-2001"}]->(a4)
 
 match (c2:companies{name:"Lufthansa", asset:"asset2"}),
   (a1:airports{name:"Schiphol", size: 100}),
-  (a4:airports{name:"Venezia Marco Polo", size: 400})
+  (a4:airports{name:"Rome airport", size: 400})
   create
     (c2)-[b5:BASED{rent:2200, since:"03-03-2003"}]->(a1),
     (c2)-[b6:BASED{rent:1700, since:"18-09-2000"}]->(a4)
-
-
-
- -------- Question queries  --------
-
-// Find the name and the capacity of all ’Large’ airports.
-
-
-// Find the total capacity of the airports in the same city. Output the name of the city and the total capacity.
-
-// Find the name of the airport with the highest capacity. Output the name and the capacity.
-
-// Find all the opened terminals in ’Schiphol’. Output the code.
-
-// Find all the terminals of the airports in ’London’. Output the code.
-
-// Find all the gates that are boarding in ’Venezia Marco Polo’ for terminal ’B’. Print the number and the state.
-
-// Find all the flights landing in ’Rome’ for ’Lufthansa’ and ’KLM’. Print the code and the plane.
-
-// For each company find the amount of flights going to ’Rome’ leaving before 15:00. Print the company name and the total of flights.

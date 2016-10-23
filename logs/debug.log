@@ -3332,3 +3332,565 @@ RETURN r;
 2016-10-23 10:45:10.612+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
 2016-10-23 10:45:20.713+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
 2016-10-23 10:45:28.556+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 7743ms.
+2016-10-23 10:45:38.657+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 10:45:48.758+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 10:45:54.167+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 5308ms.
+2016-10-23 10:45:58.731+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 4359ms.
+2016-10-23 10:46:00.225+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1291ms.
+2016-10-23 10:46:45.689+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (a)-[r]->(b) WHERE id(a) IN {node_ids}
+AND id(b) IN {new_node_ids}
+RETURN r;
+2016-10-23 10:46:45.694+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (a)-[r]->(b) WHERE id(a) IN {node_ids}
+AND id(b) IN {new_node_ids}
+RETURN r;
+2016-10-23 10:46:46.285+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 10:46:56.356+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 9970ms.
+2016-10-23 10:47:05.747+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 9186ms.
+2016-10-23 10:47:15.952+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 10:47:23.473+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 7421ms.
+2016-10-23 10:47:31.469+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 7794ms.
+2016-10-23 10:47:33.027+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1456ms.
+2016-10-23 10:48:46.270+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 10:48:56.372+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10001ms.
+2016-10-23 10:48:57.222+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 750ms.
+2016-10-23 10:48:58.124+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 801ms.
+2016-10-23 10:49:28.133+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [217]:  Starting check pointing...
+2016-10-23 10:49:28.133+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [217]:  Starting store flush...
+2016-10-23 10:49:28.134+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 217 to [/Users/remcovisser/code/school/hr/Jaar2/Blok1/Assignment3/neostore.counts.db.a], from [/Users/remcovisser/code/school/hr/Jaar2/Blok1/Assignment3/neostore.counts.db.b].
+2016-10-23 10:49:28.135+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 217 to [/Users/remcovisser/code/school/hr/Jaar2/Blok1/Assignment3/neostore.counts.db.a], from [/Users/remcovisser/code/school/hr/Jaar2/Blok1/Assignment3/neostore.counts.db.b].
+2016-10-23 10:49:28.138+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [217]:  Store flush completed
+2016-10-23 10:49:28.139+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [217]:  Starting appending check point entry into the tx log...
+2016-10-23 10:49:28.139+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [217]:  Appending check point entry into the tx log completed
+2016-10-23 10:49:28.139+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [217]:  Check pointing completed
+2016-10-23 10:49:28.139+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-10-23 10:49:28.139+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-10-23 10:49:45.756+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 10:49:55.856+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 10:50:00.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 4053ms.
+2016-10-23 10:50:10.111+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 10:50:11.001+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 789ms.
+2016-10-23 10:50:11.995+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 893ms.
+2016-10-23 10:51:46.196+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 10:51:56.297+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 10:52:06.397+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 10:52:11.020+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 4521ms.
+2016-10-23 10:52:14.073+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2953ms.
+2016-10-23 10:54:10.179+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3740ms.
+2016-10-23 10:54:11.881+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 983ms.
+2016-10-23 10:54:13.303+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1322ms.
+2016-10-23 10:55:16.397+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 10:55:26.498+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 10:55:27.959+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1360ms.
+2016-10-23 10:55:29.040+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 980ms.
+2016-10-23 10:56:06.831+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 579ms.
+2016-10-23 10:56:16.932+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 10:56:27.033+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 10:56:30.910+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3777ms.
+2016-10-23 10:56:35.354+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 4235ms.
+2016-10-23 10:56:45.455+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 10:56:53.262+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 7707ms.
+2016-10-23 10:56:56.789+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3322ms.
+2016-10-23 10:57:06.990+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 10:57:09.002+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1812ms.
+2016-10-23 10:57:15.208+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 6004ms.
+2016-10-23 10:58:13.348+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 7793ms.
+2016-10-23 10:58:17.351+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3798ms.
+2016-10-23 10:58:27.552+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 10:58:30.102+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2448ms.
+2016-10-23 10:58:40.305+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 10:58:50.405+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 10:59:00.038+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 9529ms.
+2016-10-23 10:59:10.139+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 10:59:17.190+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 6950ms.
+2016-10-23 10:59:18.795+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1402ms.
+2016-10-23 10:59:22.763+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3762ms.
+2016-10-23 10:59:26.731+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3868ms.
+2016-10-23 10:59:36.832+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 10:59:46.933+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 10:59:57.034+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:00:00.012+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2878ms.
+2016-10-23 11:00:10.113+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:00:12.045+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1831ms.
+2016-10-23 11:00:23.272+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:00:33.372+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:00:43.473+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:00:53.574+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:00:58.181+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 4506ms.
+2016-10-23 11:01:08.382+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:01:12.450+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3867ms.
+2016-10-23 11:01:22.653+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:01:24.482+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1728ms.
+2016-10-23 11:01:28.883+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 4199ms.
+2016-10-23 11:01:38.983+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:01:49.084+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:01:54.293+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 5108ms.
+2016-10-23 11:02:04.498+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:02:14.598+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:02:24.699+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:02:34.800+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:02:36.207+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1307ms.
+2016-10-23 11:02:46.411+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:02:47.487+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 975ms.
+2016-10-23 11:03:46.760+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:03:49.059+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2198ms.
+2016-10-23 11:03:59.264+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:04:00.017+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 652ms.
+2016-10-23 11:04:09.249+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH p=()-[r:INCLUDES]->() RETURN p LIMIT 25
+2016-10-23 11:04:09.250+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH p=()-[r:INCLUDES]->() RETURN p LIMIT 25
+2016-10-23 11:04:10.117+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:04:12.909+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2691ms.
+2016-10-23 11:04:23.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:04:30.290+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 7179ms.
+2016-10-23 11:05:40.474+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3697ms.
+2016-10-23 11:05:47.261+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 6685ms.
+2016-10-23 11:06:46.983+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:06:47.338+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 254ms.
+2016-10-23 11:07:47.038+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:07:50.480+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3338ms.
+2016-10-23 11:08:00.012+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 9330ms.
+2016-10-23 11:08:10.112+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:08:20.213+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:08:30.314+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:08:38.048+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 7633ms.
+2016-10-23 11:08:41.055+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2804ms.
+2016-10-23 11:08:50.775+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 9516ms.
+2016-10-23 11:09:00.031+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 9054ms.
+2016-10-23 11:09:00.031+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [218]:  Starting check pointing...
+2016-10-23 11:09:00.031+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [218]:  Starting store flush...
+2016-10-23 11:09:00.033+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 218 to [/Users/remcovisser/code/school/hr/Jaar2/Blok1/Assignment3/neostore.counts.db.b], from [/Users/remcovisser/code/school/hr/Jaar2/Blok1/Assignment3/neostore.counts.db.a].
+2016-10-23 11:09:00.035+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 218 to [/Users/remcovisser/code/school/hr/Jaar2/Blok1/Assignment3/neostore.counts.db.b], from [/Users/remcovisser/code/school/hr/Jaar2/Blok1/Assignment3/neostore.counts.db.a].
+2016-10-23 11:09:00.037+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [218]:  Store flush completed
+2016-10-23 11:09:00.037+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [218]:  Starting appending check point entry into the tx log...
+2016-10-23 11:09:00.039+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [218]:  Appending check point entry into the tx log completed
+2016-10-23 11:09:00.039+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [218]:  Check pointing completed
+2016-10-23 11:09:00.039+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-10-23 11:09:00.039+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-10-23 11:09:10.132+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:09:10.608+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 376ms.
+2016-10-23 11:10:16.335+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:10:26.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 9570ms.
+2016-10-23 11:10:26.686+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 578ms.
+2016-10-23 11:11:46.017+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:11:52.007+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 5536ms.
+2016-10-23 11:12:00.020+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 7567ms.
+2016-10-23 11:12:09.422+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 9297ms.
+2016-10-23 11:14:17.107+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:14:27.208+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:14:37.309+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:14:47.410+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:14:53.121+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 5609ms.
+2016-10-23 11:15:03.361+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:15:13.463+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:15:23.387+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 9823ms.
+2016-10-23 11:15:33.588+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:15:43.689+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:15:53.547+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 9758ms.
+2016-10-23 11:16:03.748+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:16:13.849+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:16:23.798+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 9848ms.
+2016-10-23 11:16:25.391+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1319ms.
+2016-10-23 11:16:28.051+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2456ms.
+2016-10-23 11:16:34.618+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 6362ms.
+2016-10-23 11:16:36.772+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2051ms.
+2016-10-23 11:16:42.009+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 5136ms.
+2016-10-23 11:18:40.745+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3572ms.
+2016-10-23 11:18:46.315+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 5468ms.
+2016-10-23 11:20:12.140+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 5330ms.
+2016-10-23 11:20:13.359+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1117ms.
+2016-10-23 11:20:23.459+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:20:33.560+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:20:43.661+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:20:53.761+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:20:55.233+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1370ms.
+2016-10-23 11:21:00.021+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 4570ms.
+2016-10-23 11:21:10.122+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:21:20.223+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:21:30.324+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:21:35.406+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 4982ms.
+2016-10-23 11:21:36.777+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1269ms.
+2016-10-23 11:22:46.350+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:22:56.035+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 9584ms.
+2016-10-23 11:23:00.333+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 4097ms.
+2016-10-23 11:23:10.537+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:23:20.639+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:23:26.182+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 5441ms.
+2016-10-23 11:23:35.690+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 9307ms.
+2016-10-23 11:23:45.790+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:23:51.743+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 5852ms.
+2016-10-23 11:23:52.703+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 859ms.
+2016-10-23 11:23:54.427+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1624ms.
+2016-10-23 11:25:46.591+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:25:56.133+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 9439ms.
+2016-10-23 11:25:56.760+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 522ms.
+2016-10-23 11:25:57.203+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 342ms.
+2016-10-23 11:26:00.011+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2608ms.
+2016-10-23 11:26:00.410+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 298ms.
+2016-10-23 11:27:16.389+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:27:26.489+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:27:28.848+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2258ms.
+2016-10-23 11:27:38.949+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:27:49.050+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:27:58.764+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 9613ms.
+2016-10-23 11:28:00.020+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1054ms.
+2016-10-23 11:28:10.120+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:28:20.221+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:28:30.321+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:28:35.478+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 5056ms.
+2016-10-23 11:28:45.728+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10001ms.
+2016-10-23 11:28:47.077+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [219]:  Starting check pointing...
+2016-10-23 11:28:47.077+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [219]:  Starting store flush...
+2016-10-23 11:28:47.082+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 219 to [/Users/remcovisser/code/school/hr/Jaar2/Blok1/Assignment3/neostore.counts.db.a], from [/Users/remcovisser/code/school/hr/Jaar2/Blok1/Assignment3/neostore.counts.db.b].
+2016-10-23 11:28:47.084+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 219 to [/Users/remcovisser/code/school/hr/Jaar2/Blok1/Assignment3/neostore.counts.db.a], from [/Users/remcovisser/code/school/hr/Jaar2/Blok1/Assignment3/neostore.counts.db.b].
+2016-10-23 11:28:47.086+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [219]:  Store flush completed
+2016-10-23 11:28:47.086+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [219]:  Starting appending check point entry into the tx log...
+2016-10-23 11:28:47.086+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [219]:  Appending check point entry into the tx log completed
+2016-10-23 11:28:47.086+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [219]:  Check pointing completed
+2016-10-23 11:28:47.086+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-10-23 11:28:47.086+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-10-23 11:28:52.900+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 7071ms.
+2016-10-23 11:28:58.529+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 5425ms.
+2016-10-23 11:29:00.022+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1291ms.
+2016-10-23 11:29:08.953+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 8830ms.
+2016-10-23 11:29:19.339+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:29:29.442+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10002ms.
+2016-10-23 11:29:29.877+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 334ms.
+2016-10-23 11:29:33.265+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3178ms.
+2016-10-23 11:29:43.470+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:29:44.322+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH p=()-[r:TRAVELS]->() RETURN p LIMIT 25
+2016-10-23 11:29:44.323+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH p=()-[r:TRAVELS]->() RETURN p LIMIT 25
+2016-10-23 11:29:53.571+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10001ms.
+2016-10-23 11:29:58.399+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 4727ms.
+2016-10-23 11:29:58.922+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 313ms.
+2016-10-23 11:29:59.371+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 349ms.
+2016-10-23 11:30:00.023+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 551ms.
+2016-10-23 11:30:10.124+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:30:10.781+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 557ms.
+2016-10-23 11:30:20.988+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:30:21.560+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 472ms.
+2016-10-23 11:30:23.920+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2112ms.
+2016-10-23 11:30:26.150+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2029ms.
+2016-10-23 11:30:29.647+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1929ms.
+2016-10-23 11:30:32.707+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1835ms.
+2016-10-23 11:30:37.539+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 4323ms.
+2016-10-23 11:30:38.488+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 745ms.
+2016-10-23 11:30:48.708+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:30:49.251+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 442ms.
+2016-10-23 11:30:54.447+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 4993ms.
+2016-10-23 11:30:56.425+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1774ms.
+2016-10-23 11:30:57.361+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 835ms.
+2016-10-23 11:30:59.163+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1598ms.
+2016-10-23 11:30:59.627+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 247ms.
+2016-10-23 11:31:02.995+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3267ms.
+2016-10-23 11:31:07.205+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 4007ms.
+2016-10-23 11:31:09.022+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1606ms.
+2016-10-23 11:31:12.349+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3122ms.
+2016-10-23 11:31:14.676+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2123ms.
+2016-10-23 11:31:17.943+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3064ms.
+2016-10-23 11:31:22.927+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 4806ms.
+2016-10-23 11:31:27.454+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3501ms.
+2016-10-23 11:31:29.301+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1744ms.
+2016-10-23 11:31:29.931+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 368ms.
+2016-10-23 11:31:33.483+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3350ms.
+2016-10-23 11:31:35.850+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2165ms.
+2016-10-23 11:31:39.818+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3737ms.
+2016-10-23 11:31:41.713+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1792ms.
+2016-10-23 11:31:44.828+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2913ms.
+2016-10-23 11:31:47.435+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2367ms.
+2016-10-23 11:31:50.003+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2365ms.
+2016-10-23 11:31:52.860+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2655ms.
+2016-10-23 11:31:55.843+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2867ms.
+2016-10-23 11:31:59.122+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3061ms.
+2016-10-23 11:31:59.583+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 260ms.
+2016-10-23 11:32:00.027+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 243ms.
+2016-10-23 11:32:04.609+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 4481ms.
+2016-10-23 11:32:06.348+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1638ms.
+2016-10-23 11:32:08.824+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2274ms.
+2016-10-23 11:32:11.892+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2787ms.
+2016-10-23 11:32:14.775+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2678ms.
+2016-10-23 11:32:16.861+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1877ms.
+2016-10-23 11:32:19.912+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2947ms.
+2016-10-23 11:32:21.753+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1640ms.
+2016-10-23 11:32:24.362+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2408ms.
+2016-10-23 11:32:26.016+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1447ms.
+2016-10-23 11:32:28.240+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2022ms.
+2016-10-23 11:32:29.981+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1483ms.
+2016-10-23 11:32:32.174+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1991ms.
+2016-10-23 11:32:34.533+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2101ms.
+2016-10-23 11:32:37.609+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2976ms.
+2016-10-23 11:32:39.380+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1565ms.
+2016-10-23 11:32:41.482+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1899ms.
+2016-10-23 11:32:43.322+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1501ms.
+2016-10-23 11:32:45.603+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2069ms.
+2016-10-23 11:32:47.544+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1737ms.
+2016-10-23 11:32:49.322+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1577ms.
+2016-10-23 11:32:51.698+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2132ms.
+2016-10-23 11:32:54.945+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3144ms.
+2016-10-23 11:32:56.764+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1549ms.
+2016-10-23 11:32:58.892+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1927ms.
+2016-10-23 11:33:00.194+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1093ms.
+2016-10-23 11:33:00.799+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 341ms.
+2016-10-23 11:33:03.612+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2607ms.
+2016-10-23 11:33:05.728+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1915ms.
+2016-10-23 11:33:08.087+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2155ms.
+2016-10-23 11:33:10.227+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1863ms.
+2016-10-23 11:33:12.056+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1628ms.
+2016-10-23 11:33:13.900+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1641ms.
+2016-10-23 11:33:15.965+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1893ms.
+2016-10-23 11:33:18.194+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1964ms.
+2016-10-23 11:33:20.531+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2132ms.
+2016-10-23 11:33:23.074+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2338ms.
+2016-10-23 11:33:25.486+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2208ms.
+2016-10-23 11:33:27.505+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1816ms.
+2016-10-23 11:33:29.666+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1955ms.
+2016-10-23 11:33:31.547+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1482ms.
+2016-10-23 11:33:33.869+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2175ms.
+2016-10-23 11:33:39.147+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 5175ms.
+2016-10-23 11:33:41.430+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2077ms.
+2016-10-23 11:33:43.323+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1688ms.
+2016-10-23 11:33:45.250+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1722ms.
+2016-10-23 11:33:46.960+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1483ms.
+2016-10-23 11:33:49.195+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2031ms.
+2016-10-23 11:33:51.293+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1860ms.
+2016-10-23 11:33:51.566+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [257]:  Starting check pointing...
+2016-10-23 11:33:51.566+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [257]:  Starting store flush...
+2016-10-23 11:33:51.598+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 257 to [/Users/remcovisser/code/school/hr/Jaar2/Blok1/Assignment3/neostore.counts.db.b], from [/Users/remcovisser/code/school/hr/Jaar2/Blok1/Assignment3/neostore.counts.db.a].
+2016-10-23 11:33:51.600+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 257 to [/Users/remcovisser/code/school/hr/Jaar2/Blok1/Assignment3/neostore.counts.db.b], from [/Users/remcovisser/code/school/hr/Jaar2/Blok1/Assignment3/neostore.counts.db.a].
+2016-10-23 11:33:51.603+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [257]:  Store flush completed
+2016-10-23 11:33:51.603+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [257]:  Starting appending check point entry into the tx log...
+2016-10-23 11:33:51.604+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [257]:  Appending check point entry into the tx log completed
+2016-10-23 11:33:51.604+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [257]:  Check pointing completed
+2016-10-23 11:33:51.604+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-10-23 11:33:51.604+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-10-23 11:33:53.161+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1667ms.
+2016-10-23 11:33:55.060+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1680ms.
+2016-10-23 11:33:56.500+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1237ms.
+2016-10-23 11:33:57.062+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 461ms.
+2016-10-23 11:34:00.659+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3391ms.
+2016-10-23 11:34:02.715+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1855ms.
+2016-10-23 11:34:05.043+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2124ms.
+2016-10-23 11:34:06.912+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1663ms.
+2016-10-23 11:34:08.823+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1706ms.
+2016-10-23 11:34:10.833+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1673ms.
+2016-10-23 11:34:12.327+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1291ms.
+2016-10-23 11:34:13.181+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 752ms.
+2016-10-23 11:34:15.685+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2303ms.
+2016-10-23 11:34:18.916+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3029ms.
+2016-10-23 11:34:20.793+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1672ms.
+2016-10-23 11:34:23.085+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2088ms.
+2016-10-23 11:34:25.034+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1741ms.
+2016-10-23 11:34:27.170+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1934ms.
+2016-10-23 11:34:29.842+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2466ms.
+2016-10-23 11:34:32.252+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2207ms.
+2016-10-23 11:34:34.432+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1899ms.
+2016-10-23 11:34:35.508+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 874ms.
+2016-10-23 11:34:37.464+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1855ms.
+2016-10-23 11:34:39.391+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1719ms.
+2016-10-23 11:34:41.943+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2350ms.
+2016-10-23 11:34:43.841+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1694ms.
+2016-10-23 11:34:46.451+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2408ms.
+2016-10-23 11:34:49.079+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2424ms.
+2016-10-23 11:34:51.213+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1930ms.
+2016-10-23 11:34:54.096+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2671ms.
+2016-10-23 11:34:56.423+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2122ms.
+2016-10-23 11:34:58.808+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2116ms.
+2016-10-23 11:35:01.235+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2282ms.
+2016-10-23 11:35:04.919+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3218ms.
+2016-10-23 11:35:10.145+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 5022ms.
+2016-10-23 11:35:11.925+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1578ms.
+2016-10-23 11:35:14.782+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1975ms.
+2016-10-23 11:35:16.155+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1169ms.
+2016-10-23 11:35:16.702+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 447ms.
+2016-10-23 11:35:18.677+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1772ms.
+2016-10-23 11:35:20.659+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1763ms.
+2016-10-23 11:35:21.430+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 670ms.
+2016-10-23 11:35:31.634+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:35:41.734+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:35:51.835+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:35:56.868+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 4932ms.
+2016-10-23 11:35:59.775+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2703ms.
+2016-10-23 11:36:10.119+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:36:14.338+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 4119ms.
+2016-10-23 11:36:17.669+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3128ms.
+2016-10-23 11:36:19.901+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2027ms.
+2016-10-23 11:36:23.640+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2719ms.
+2016-10-23 11:36:30.930+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 6969ms.
+2016-10-23 11:36:34.569+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3437ms.
+2016-10-23 11:36:38.408+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3635ms.
+2016-10-23 11:36:47.243+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 8633ms.
+2016-10-23 11:36:48.712+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1228ms.
+2016-10-23 11:36:49.676+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 861ms.
+2016-10-23 11:36:54.960+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 5081ms.
+2016-10-23 11:36:57.144+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1981ms.
+2016-10-23 11:37:00.310+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2961ms.
+2016-10-23 11:37:02.247+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1735ms.
+2016-10-23 11:37:06.927+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 4475ms.
+2016-10-23 11:37:17.132+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:37:27.233+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:37:37.333+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:37:47.434+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:37:51.494+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3959ms.
+2016-10-23 11:38:01.742+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:38:02.486+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 537ms.
+2016-10-23 11:38:04.322+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1588ms.
+2016-10-23 11:38:06.968+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2546ms.
+2016-10-23 11:38:07.809+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 741ms.
+2016-10-23 11:38:18.018+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:38:28.119+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:38:37.310+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 9090ms.
+2016-10-23 11:38:45.371+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 7859ms.
+2016-10-23 11:38:55.576+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:38:57.103+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [276]:  Starting check pointing...
+2016-10-23 11:38:57.103+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [276]:  Starting store flush...
+2016-10-23 11:38:57.103+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 276 to [/Users/remcovisser/code/school/hr/Jaar2/Blok1/Assignment3/neostore.counts.db.a], from [/Users/remcovisser/code/school/hr/Jaar2/Blok1/Assignment3/neostore.counts.db.b].
+2016-10-23 11:38:57.104+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 276 to [/Users/remcovisser/code/school/hr/Jaar2/Blok1/Assignment3/neostore.counts.db.a], from [/Users/remcovisser/code/school/hr/Jaar2/Blok1/Assignment3/neostore.counts.db.b].
+2016-10-23 11:38:57.106+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [276]:  Store flush completed
+2016-10-23 11:38:57.106+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [276]:  Starting appending check point entry into the tx log...
+2016-10-23 11:38:57.107+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [276]:  Appending check point entry into the tx log completed
+2016-10-23 11:38:57.107+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [276]:  Check pointing completed
+2016-10-23 11:38:57.107+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2016-10-23 11:38:57.107+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2016-10-23 11:38:59.734+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 4057ms.
+2016-10-23 11:39:02.758+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2823ms.
+2016-10-23 11:39:12.959+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:39:14.252+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1193ms.
+2016-10-23 11:39:17.136+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2681ms.
+2016-10-23 11:39:27.342+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:39:37.442+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:39:43.354+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 5811ms.
+2016-10-23 11:39:45.484+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2029ms.
+2016-10-23 11:39:49.540+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3954ms.
+2016-10-23 11:39:59.644+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:40:09.745+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:40:19.846+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:40:29.946+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:40:40.047+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:40:50.148+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:41:00.014+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 9765ms.
+2016-10-23 11:41:10.115+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:41:20.216+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:41:30.316+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:41:35.466+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 5049ms.
+2016-10-23 11:41:45.567+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:41:55.668+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:42:00.013+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 4244ms.
+2016-10-23 11:42:10.114+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:42:20.214+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:42:30.315+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:42:40.416+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:42:50.516+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:43:00.012+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 9394ms.
+2016-10-23 11:43:10.113+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:43:10.522+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 309ms.
+2016-10-23 11:43:20.623+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:43:30.723+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:43:40.824+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:43:50.925+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:44:00.019+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 8993ms.
+2016-10-23 11:44:10.120+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:44:20.221+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:44:30.322+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:44:40.423+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:44:50.523+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:45:00.021+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 9396ms.
+2016-10-23 11:45:10.123+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:45:20.225+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:45:30.325+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:45:40.426+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:45:47.029+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 6503ms.
+2016-10-23 11:45:48.021+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 891ms.
+2016-10-23 11:45:56.112+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 7990ms.
+2016-10-23 11:45:57.475+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 964ms.
+2016-10-23 11:45:58.981+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1306ms.
+2016-10-23 11:46:05.485+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 6199ms.
+2016-10-23 11:46:15.733+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10001ms.
+2016-10-23 11:46:25.867+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:46:35.968+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:46:38.040+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1969ms.
+2016-10-23 11:46:47.589+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 9348ms.
+2016-10-23 11:46:52.423+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 4636ms.
+2016-10-23 11:47:02.628+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:47:12.729+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:47:13.223+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 393ms.
+2016-10-23 11:49:10.360+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 4975ms.
+2016-10-23 11:49:11.756+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1294ms.
+2016-10-23 11:49:13.080+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1124ms.
+2016-10-23 11:49:23.284+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:49:24.830+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1444ms.
+2016-10-23 11:49:34.930+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:49:36.615+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1535ms.
+2016-10-23 11:49:39.438+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2721ms.
+2016-10-23 11:49:41.562+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2022ms.
+2016-10-23 11:50:36.917+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1692ms.
+2016-10-23 11:50:47.136+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:50:56.275+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 9038ms.
+2016-10-23 11:51:06.376+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:51:07.072+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 595ms.
+2016-10-23 11:51:17.272+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:51:19.442+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2069ms.
+2016-10-23 11:51:21.778+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2235ms.
+2016-10-23 11:52:15.817+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:52:25.918+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:52:26.490+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 472ms.
+2016-10-23 11:52:36.691+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:52:37.825+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1033ms.
+2016-10-23 11:52:40.416+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2384ms.
+2016-10-23 11:52:50.616+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:53:00.717+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:53:08.168+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 7350ms.
+2016-10-23 11:53:12.807+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 4338ms.
+2016-10-23 11:53:16.249+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3236ms.
+2016-10-23 11:53:26.454+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:53:36.555+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:53:46.655+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:53:49.180+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2424ms.
+2016-10-23 11:53:50.695+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1414ms.
+2016-10-23 11:55:15.917+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:55:21.957+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 5844ms.
+2016-10-23 11:55:32.057+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:55:39.220+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 7061ms.
+2016-10-23 11:55:49.421+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:55:56.245+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 6724ms.
+2016-10-23 11:56:00.010+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3664ms.
+2016-10-23 11:56:10.111+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:56:20.212+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:56:30.313+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:56:39.542+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 9128ms.
+2016-10-23 11:56:41.494+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1745ms.
+2016-10-23 11:56:46.036+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 4320ms.
+2016-10-23 11:56:56.142+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:57:06.243+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:57:09.629+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3285ms.
+2016-10-23 11:57:10.821+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 985ms.
+2016-10-23 11:57:14.760+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3734ms.
+2016-10-23 11:57:17.035+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 854ms.
+2016-10-23 11:57:28.369+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:57:38.470+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:57:45.636+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 7064ms.
+2016-10-23 11:57:55.736+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:58:05.837+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:58:15.938+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:58:26.039+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:58:36.140+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:58:40.088+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3846ms.
+2016-10-23 11:58:50.289+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:59:00.035+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 9645ms.
+2016-10-23 11:59:10.146+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:59:12.751+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2503ms.
+2016-10-23 11:59:22.954+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:59:33.055+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 11:59:40.513+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 7356ms.
+2016-10-23 11:59:45.021+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 4307ms.
+2016-10-23 11:59:56.152+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10001ms.
+2016-10-23 12:00:00.033+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3780ms.
+2016-10-23 12:00:05.503+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 5369ms.
+2016-10-23 12:00:07.080+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1374ms.
+2016-10-23 12:00:17.284+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 12:00:27.385+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 12:00:37.486+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 12:00:40.986+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3400ms.
+2016-10-23 12:00:42.392+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1205ms.
+2016-10-23 12:00:44.787+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2189ms.
+2016-10-23 12:00:47.549+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 2559ms.
+2016-10-23 12:00:55.846+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 7471ms.
+2016-10-23 12:01:06.047+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 10000ms.
+2016-10-23 12:01:09.299+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 3050ms.
