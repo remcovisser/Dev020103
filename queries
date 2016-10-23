@@ -292,11 +292,11 @@ match (t6:terminals{code:"A2"}), (g16:gates{number:16}), (g17:gates{number:17}),
     (t6)-[b17:BELONGS]->(g17),
     (t6)-[b18:BELONGS]->(g18)
 
-  match (t7:terminals{code:"B2"}), (g19:gates{number:19}), (g20:gates{number:20}), (g21:gates{number:21})
-    create
-      (t7)-[b19:BELONGS]->(g19),
-      (t7)-[b20:BELONGS]->(g20),
-      (t7)-[b21:BELONGS]->(g21)
+match (t7:terminals{code:"B2"}), (g19:gates{number:19}), (g20:gates{number:20}), (g21:gates{number:21})
+  create
+    (t7)-[b19:BELONGS]->(g19),
+    (t7)-[b20:BELONGS]->(g20),
+    (t7)-[b21:BELONGS]->(g21)
 
 match (t8:terminals{code:"C2"}), (g22:gates{number:22}), (g23:gates{number:23}), (g24:gates{number:24})
   create
@@ -490,6 +490,7 @@ match (c2:companies{name:"Lufthansa", asset:"asset2"}),
  -------- Question queries  --------
 
 // Find the name and the capacity of all ’Large’ airports.
+
 
 // Find the total capacity of the airports in the same city. Output the name of the city and the total capacity.
 
