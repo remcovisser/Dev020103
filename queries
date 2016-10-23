@@ -22,7 +22,7 @@ match (a:airports {name:"Venezia Marco Polo"})-[i:INCLUDES]-(t:terminals{code:"B
 // Find all the flights landing in ’Rome’ for ’Lufthansa’ and ’KLM’. Print the code and the plane.
 match(a:airports {city:"Rome"})-[t:TRAVELS]-(f:flights)-[s:SELLS]-(c:companies)
 where c.name = "KLM" or c.name = "Lufthansa"
-return f, t, c
+return f.code, f.plane
 
 // For each company find the amount of flights going to ’Rome’ leaving before 15:00. Print the company name and the total of flights.
 match(a:airports {city:"Rome"})-[t:TRAVELS]-(f:flights)-[s:SELLS]-(c:companies)
